@@ -94,6 +94,7 @@ else
   echo "Switching Kubernetes context to minikube..."
   minikube update-context
 fi
+kubectl config use-context minikube
 
 # Step 5: Build Docker images
 echo ""
